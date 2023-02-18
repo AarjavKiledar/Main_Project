@@ -1,0 +1,192 @@
+<html>
+
+<head>
+  <style>
+    body {
+      width: 500px;
+      margin: 0 auto;
+      padding: 50px;
+    }
+
+    div.elem-group {
+      margin: 20px 0;
+    }
+
+    div.elem-group.inlined {
+      width: 49%;
+      display: inline-block;
+      float: left;
+      margin-left: 1%;
+    }
+
+    label {
+      display: block;
+      font-family: 'Nanum Gothic';
+      padding-bottom: 10px;
+      font-size: 1.25em;
+    }
+
+    input,
+    select,
+    textarea {
+      border-radius: 2px;
+      border: 2px solid #777;
+      box-sizing: border-box;
+      font-size: 1.25em;
+      font-family: 'Nanum Gothic';
+      width: 100%;
+      padding: 10px;
+    }
+
+    div.elem-group.inlined input {
+      width: 95%;
+      display: inline-block;
+    }
+
+    textarea {
+      height: 250px;
+    }
+
+    hr {
+      border: 1px dotted #ccc;
+    }
+
+    button {
+      height: 50px;
+      background: orange;
+      border: none;
+      color: white;
+      font-size: 1.25em;
+      font-family: 'Nanum Gothic';
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    body {
+
+      background-image: url(Images/Resort1.jpg);
+      font-family: Arial, Helvetica, sans-serif;
+      background-size: 1500px 1500px;
+    }
+
+    button:hover {
+      border: 2px solid black;
+    }
+
+    #navbar {
+      background-color: #f0ece2;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: block;
+      transition: top 0.3s;
+      font-family: 'Barlow';
+      letter-spacing: 0.2em;
+    }
+
+    #navbar a {
+      float: right;
+      display: block;
+      color: #142d4c;
+      text-align: center;
+      padding: 15px 15px 10px 15px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #142d4c;
+      color: #f0ece2;
+    }
+
+    #Resort1 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .a1 {
+      color: #fafafa;
+    }
+
+    label {
+      font-size: 25px;
+      color: #fafafa;
+      background-color: #142d4c;
+    }
+
+    hr {
+      margin: 80px auto 20px auto;
+      border-style: none;
+      border-top-style: dotted;
+      border-color: #fafafa;
+      border-width: 5px;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body style="margin: 10px; padding: 0%;">
+    <div id="navbar">
+      <a style="position: relative;float: left;width: 9%;padding-top: 0px;padding-bottom: 0px;" href="main.html"><img
+          style="position:relative;width: 100%;" src="Images/logo.png" alt="Img not found"></a>
+      <a style="position: relative;width: 4%; padding-top: 10px;" href="login.html"><img
+          style="position:relative;width: 50%;" src="Images/Sign_in.png"> </a>
+      <a href="main.html">HOME</a>
+      <a href="booking.html">BOOK NOW</a>
+      <a href="restraurant.html">OUR RESTRAURANT</a>
+    </div>
+    <h1>.</h1>
+    <h1 class="a1" style="font-family: 'Bodoni Moda'; font-size: 50px; margin-top: 10px;">BOOKING FORM</h1>
+    <form action="reservation.php" method="post">
+      <div class="elem-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="visitor_name" placeholder="Your Name" pattern=[A-Z\sa-z]{3,20} required>
+      </div>
+      <div class="elem-group">
+        <label for="email">Your E-mail</label>
+        <input type="email" id="email" name="visitor_email" placeholder="youremailid.@email.com" required>
+      </div>
+      <div class="elem-group">
+        <label for="phone">Your Phone</label>
+        <input type="tel" id="phone" name="visitor_phone" placeholder="123-456-7890"
+          pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+      </div>
+      <hr>
+      <div class="elem-group inlined">
+        <label for="adult">Adults</label>
+        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="child">Children</label>
+        <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="checkin-date">Check-in Date</label>
+        <input type="date" id="checkin-date" name="checkin" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="checkout-date">Check-out Date</label>
+        <input type="date" id="checkout-date" name="checkout" required>
+      </div>
+      <div class="elem-group">
+        <label for="room-selection">Select Room Preference</label>
+        <select id="room-selection" name="room_preference" required>
+          <option value="">Choose a Room from the List</option>
+          <option value="connecting">Connecting</option>
+          <option value="adjoining">Adjoining</option>
+          <option value="adjacent">Adjacent</option>
+        </select>
+      </div>
+      <hr>
+      <div class="elem-group">
+        <label for="message">Anything Else?</label>
+        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
+          required></textarea>
+      </div>
+      <button type="submit">Book The Rooms</button>
+    </form>
+  </body>
+
+</html>

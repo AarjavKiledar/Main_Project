@@ -1,0 +1,262 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Bodoni+Moda:opsz,wght@6..96,500&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bodoni+Moda:opsz,wght@6..96,500&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <style>
+        body {
+            margin: 0;
+            background-color: #142d4c;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #navbar {
+            background-color: #f0ece2;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+            font-family: 'Barlow';
+            letter-spacing: 0.2em;
+        }
+
+        #navbar a {
+            float: right;
+            display: block;
+            color: #142d4c;
+            text-align: center;
+            padding: 15px 15px 10px 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: #142d4c;
+            color: #f0ece2;
+        }
+
+        #Resort1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .a1 {
+            color: #fafafa;
+        }
+        .container{
+            max-width: 1170px;
+            margin: auto;
+        }
+        .row
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer
+        {
+            background-color: #f0ece2;
+            padding: 70px 0;
+            font-family: 'Poppins' sans-serif;
+        }
+        .footer-col{
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: #142d4c;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: ' ';
+            position: absolute;
+            left: 0%;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #142d4c;
+            text-decoration: none;
+            font-weight: 300;
+            color: #142d4c;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #142d4c;
+            padding-left:8px ;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #142d4c;
+            transition: 0.5s;
+        }
+        .footer-col .social-links a:hover{
+            color: #f0ece2;
+            background-color: #142d4c;
+        }
+        #Resort1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .Exp {
+            margin: 100px auto 100px auto;
+            width: 70%;
+            text-align: left;
+            line-height: 3;
+            height: 60%;
+        }
+
+        hr {
+            margin: 80px auto 20px auto;
+            border-style: none;
+            border-top-style: dotted;
+            border-color:#f0ece2;
+            border-width: 5px;
+            width: 30%;
+        }
+    </style>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="navbar">
+        <a style="position: relative;float: left;width: 9%;padding-top: 0px;padding-bottom: 0px;" href="main.html"><img
+                style="position:relative;width: 100%;" src="Images/logo.png" alt="Img not found"></a>
+        <a style="position: relative;width: 4%; padding-top: 10px;" href="login.html"><img
+                style="position:relative;width: 50%;" src="Images/Sign_in.png"> </a>
+        <a href="main.html">HOME</a>
+        <a href="booking.html">BOOK NOW</a>
+        <a href="restraurant.html">OUR RESTRAURANT</a>
+    </div>
+    <h1 class="a1"
+        style="position: absolute;font-family: 'Bodoni Moda'; right: 15%; font-size: 100px; margin-top: 150px;">VOYAGE
+        RESORT</h1>
+    <h3 class="a1"
+        style="position: absolute;right: 35%;font-size: 40px; font-family: 'Great Vibes'; margin-top: 360px;">
+        Destination | Luxury | Respite</h3>
+    <img id="Resort1" src="Images/Resort1.jpg">
+    <div class="Exp">
+        <img style="width: 40%; height:80%;float:right; margin-left: 40px; margin-top: 60px;" src="Images/Resort2.webp">
+        <h2 style="font-family:bodoni moda;color: #f0ece2;">The Voyage Resort Experience</h2>
+        <p style="font-family:  'barlow';color: #f0ece2;">Head to the quaint village of Assonora, in North Goa. It lies within the <br>sub-district of Bardez, and is
+            home
+            to one of the loveliest kid-friendly resorts. Here, family holidays come alive under the sunshine and floral
+            diversity. Needless to say, Voyage Resort Assonora, Goa should be your next travel spot.</p>
+    </div>
+    <hr>
+    <br><br><br>
+
+    <center>
+        <h2 style="font-family:bodoni moda;color: #f0ece2;">Luxurious Amenities at Voyage Resort</h2>
+    </center>
+    <div>
+        <div style="float:left; text-align: center;width: 30%;margin: 30px;">
+            <img style="width: 400px; height: 300px; border-radius: 15%;" src="Images/Spa.jpg"><br><br><br>
+            <h3 style="font-family:  'barlow';color: #f0ece2;">SPA</h3>
+        </div>
+        <div style="text-align: center;float:left; width: 30%;">
+            <img style="width:400px;height: 300px;margin: 30px;border-radius: 15%" src="Images/Swimming Pool.jpeg">
+            <h3 style="font-family:  'barlow';color: #f0ece2;">SWIMMING POOL</h3>
+        </div>
+        <div style="text-align: center; float:right;width: 30%;">
+            <img style="width: 400px;height: 300px; margin: 30px;border-radius: 15%" src="Images/hotel-restaurant.webp">
+            <h3 style="font-family:  'barlow';color: #f0ece2;">RESTRAURANT</h3>
+        </div>
+    </div>
+    <hr style="margin-left:110px; margin-top: 100px;">
+    <br><br><br><br>
+    <div style="background: fixed url(Images/Resort3.jpg);background-size: 1300px 900px; height: 600px;width: 1400px;">
+        <div><img src="Images/Background.jpg" style="opacity: 0.7; width: 45%; margin-top: 150px;margin-left: 600px;">
+            <div>
+                <h1 style="z-index: 2; position: absolute; margin-top: -400px; margin-left: 760px; font-size: 60px; font-family: 'bodoni moda';font-weight:bolder;">Stay with us</h1>
+                <h3 style="z-index: 2; position: absolute; margin-top: -300px; margin-left: 1100px;font-family: 'bodoni moda';font-weight:bolder;">Email</h3>
+                <p style="z-index: 2; position: absolute; margin-top: -260px; margin-left: 1000px;font-family: 'barlow';font-weight:bolder;">voyageresort@email.com</p>
+                <h3 style="z-index: 2; position: absolute; margin-top: -220px; margin-left: 1100px;font-family: 'bodoni moda';font-weight:bolder;">Phone</h3>
+                <p style="z-index: 2; position: absolute; margin-top: -180px; margin-left: 1000px;font-family: 'barlow';font-weight:bolder;">14225 42541</p>
+                <h3 style="z-index: 2; position: absolute; margin-top: -140px; margin-left: 1100px;font-family: 'bodoni moda';font-weight:bolder;">Address</h3>
+                <p style="z-index: 2; position: absolute; margin-top: -100px; margin-left: 1000px;font-family: 'barlow';font-weight:bolder;">MG Road,Perumbakkam,Goa</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our service</a></li>
+                        <li><a href="#">privacy policy </a></li>
+                        <li><a href="#">program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

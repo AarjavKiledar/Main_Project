@@ -1,0 +1,279 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Bodoni+Moda:opsz,wght@6..96,500&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: #142d4c;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #navbar {
+            background-color: #f0ece2;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+            font-family: 'Barlow';
+            letter-spacing: 0.2em;
+        }
+
+        #navbar a {
+            float: right;
+            display: block;
+            color: #142d4c;
+            text-align: center;
+            padding: 15px 15px 10px 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: #142d4c;
+            color: #f0ece2;
+        }
+
+        #Resort1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .a1 {
+            color: #fafafa;
+        }
+
+        .OF {
+            margin: 100px auto 100px auto;
+            width: 70%;
+            text-align: left;
+            line-height: 3;
+            height: 60%;
+        }
+
+        .PF {
+            margin: 100px auto 100px auto;
+            width: 70%;
+            text-align: left;
+            line-height: 3;
+            height: 60%;
+        }
+
+        .QF {
+            margin: 100px auto 100px auto;
+            width: 70%;
+            text-align: left;
+            line-height: 3;
+            height: 60%;
+        }
+
+        .QF h2 {
+            margin: 2px;
+        }
+
+        .QF h4 {
+            margin: 2px;
+        }
+
+        hr {
+            margin: 80px auto 20px auto;
+            border-style: none;
+            border-top-style: dotted;
+            border-color: grey;
+            border-width: 5px;
+            width: 30%;
+        }
+        .container{
+            max-width: 1170px;
+            margin: auto;
+        }
+        .row
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer
+        {
+            background-color: #f0ece2;
+            padding: 70px 0;
+            font-family: 'Poppins' sans-serif;
+        }
+        .footer-col{
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: #142d4c;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: ' ';
+            position: absolute;
+            left: 0%;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #142d4c;
+            text-decoration: none;
+            font-weight: 300;
+            color: #142d4c;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #142d4c;
+            padding-left:8px ;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #142d4c;
+            transition: 0.5s;
+        }
+        .footer-col .social-links a:hover{
+            color: #f0ece2;
+            background-color: #142d4c;
+        }
+    </style>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="navbar">
+        <a style="position: relative;float: left;width: 9%;padding-top: 0px;padding-bottom: 0px;" href="main.html"><img
+                style="position:relative;width: 100%;" src="Images/logo.png" alt="Img not found"></a>
+        <a style="position: relative;width: 4%; padding-top: 10px;" href="login.html"><img
+                style="position:relative;width: 50%;" src="Images/Sign_in.png"> </a>
+        <a href="main.html">HOME</a>
+        <a href="booking.html">BOOK NOW</a>
+        <a href="restraurant.html">OUR RESTRAURANT</a>
+    </div>
+    <div style="background-image: url(Images/hotel-restaurant.webp);background-size: 1300px 800px; height: 100%;">
+        <div style="z-index: 1;">
+            <h1
+                style="position: absolute; margin-top: 200px; margin-left: 70px;font-family: 'Bodoni Moda';font-size: 80px; color:whitesmoke;">
+                LA GOURMET RESTRAURANT</h1>
+            <img src="Images/Restraurant_logo.jpg" style="width: 30%; margin-top: 350px; margin-left: 450px; ">
+        </div>
+    </div>
+    <div class="OF" style="width: 80%; height: 80%; background-color: #f0ece2;">
+        <img style="width: 60%; height:80%;float:right; margin-left: 40px; margin-top: 60px;margin-right: 60px;"
+            src="Images/Food1.webp">
+        <h2 style="margin: 20px;">The Food</h2>
+        <p style="line-height: 2; margin: 20px;">Our Food is colorful,global and eclectic edge with a gourmet,playful
+            edge. We get inspired by flavours and ingridients from all four corners of the world and put our signature
+            "wild" twist to them. Our aim is to provide a little vision on how food could be if we just imagine!</p>
+    </div>
+    <div class="PF" style="width: 80%; height: 80%; background-color: #f0ece2;">
+        <img style="width: 60%; height:80%;float:left; margin-right: 40px; margin-top: 60px;margin-left: 60px;"
+            src="Images/Food2.webp">
+        <h2 style="margin: 20px;">The Cusine</h2>
+        <p style="line-height: 2; margin: 20px;">The dark ages probably began when the Rainbow Room stopped taking
+            reservations and turned into a wedding space. After that, Rockefeller Center went for years without having a
+            restaurant that youd really go out of your way for. This didn strike most people as weird. </p>
+    </div>
+    <div class="QF" style="width: 90%; height: 150%; background-color: #f0ece2;">
+        <img src="/Images/Food3.webp" alt="Menu"
+            style="width: 40%; height:85%;float:left; margin-right: 40px; margin-top: 100px;margin-left: 60px;margin-bottom: 50px;">
+        <h1>Our Menu</h1><br>
+        <h4>Bread Basket</h4>
+        <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+        <h4>Honey Almond Granola with Fruits</h4>
+        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+        <h4>Belgian Waffle</h4>
+        <p>Vanilla flavored batter with malted flour 7.50</p><br>
+
+        <h4>Scrambled eggs</h4>
+        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+        <h4>Blueberry Pancakes</h4>
+        <p>With syrup, butter and lots of berries 8.50</p>
+
+        <div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our service</a></li>
+                        <li><a href="#">privacy policy </a></li>
+                        <li><a href="#">program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

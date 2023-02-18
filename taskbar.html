@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #142d4c;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #navbar {
+            background-color: #f0ece2;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+            font-family: 'Barlow';
+            letter-spacing: 0.2em;
+        }
+
+        #navbar a {
+            float: right;
+            display: block;
+            color: #142d4c;
+            text-align: center;
+            padding: 15px 15px 10px 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color:#142d4c;
+            color:#f0ece2 ;
+        }
+    </style>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script></head>
+
+<body>
+    <div id="navbar">
+        <a style="position: relative;float: left;width: 9%;padding-top: 0px;padding-bottom: 0px;" href="main.html"><img style="position:relative;width: 100%;" src="Images/logo.png" alt="Img not found" ></a>
+        <a style="position: relative;width: 4%; padding-top: 10px;" href=""><img style="position:relative;width: 50%;" src="Images/Sign_in.png"> </a>
+        <a href="">HOME</a>
+        <a href="">BOOK NOW</a>
+        <a href="">OUR RESTRAURANT</a>
+    </div>
+
+
+
+
+</body>
+
+</html>
